@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index/index.css">
+  <title>Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <div class="header__wrapper header__wrapper--top">
+        <img src="./assets/favicon/logo.png" alt="логотип" class="header__logo logo">
+        <ul class="navbar">
+          <li class="navbar__item item"><a href="#books-lists">Списки книг</a></li>
+          <li class="navbar__item item"><a href="#description">Описания прочитанных книг</a></li>
+          <li class="navbar__item item"><a href="#covers">Обложки книг к&nbsp;прочтению</a></li>
+        </ul>
+        <button class="menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <div class="header__wrapper header__wrapper--bottom">
+        <ul class="navbar--bottom">
+          <li class="navbar__item item--bottom"><a href="#books-lists">Списки книг</a></li>
+          <li class="navbar__item item--bottom"><a href="#description">Описания прочитанных книг</a></li>
+          <li class="navbar__item item--bottom"><a href="#covers">Обложки книг к&nbsp;прочтению</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="books-lists">
+    <div class="books-lists__wrapper wrapper">
+      <h2 class="books-lists__title title" id="books-lists">Списки книг</h2>
+      <div class="books-lists__content content">
+        <div class="content__wrapper read">
+          <h3 class="content__subtitle subtitle">Прочитанные</h3>
+          <ul class="content__lists lists">
+            <li class="lists__item item">
+              <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+              <p class="item__text">Хроники Нарнии</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+              <p class="item__text">Почти нормальная семья</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+              <p class="item__text">Убийство в Восточном экспрессе</p>
+            </li>
+          </ul>
+          <button class="button"><a href="#description">К описаниям</a></button>
+        </div>
+        <div class="content__wrapper future-read">
+          <h3 class="content__subtitle subtitle">К прочтению</h3>
+          <ul class="content__lists lists">
+            <li class="lists__item item">
+              <img src="./assets/favicon/close-book.svg" alt="иконка закрытой книги" class="item__img">
+              <p class="item__text">Дюна</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/close-book.svg" alt="иконка закрытой книги" class="item__img">
+              <p class="item__text">Лето в пионерском галстуке</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/close-book.svg" alt="иконка закрытой книги" class="item__img">
+              <p class="item__text">10 негритят</p>
+            </li>
+          </ul>
+          <button class="button"><a href="#covers">К обложкам</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="insert"></section>
+
+  <section class="description">
+    <div class="description__wrapper wrapper">
+      <h2 class="description__title title" id="description">Описания прочитанных книг</h2>
+      <div class="description__card card">
+        <div class="card__wrapper">
+          <img src="./assets/img/covers/narnia.png" alt="обложка книги" class="cover">
+          <div class="card__text">
+            <div class="card__title">Хроники Нарнии</div>
+            <div class="card__subtitle">Клайв Степлз Льюис</div>
+            <div class="card__main-text">Цикл из семи фэнтезийных повестей, написанных Клайвом Стэйплзом Льюисом. В них рассказывается о приключениях детей в волшебной стране под названием Нарния, где животные могут разговаривать, магия никого не удивляет, а добро борется со злом. «Хроники Нарнии» содержат много намёков на христианские идеи в доступном для юных читателей виде. В дополнение к христианским темам Льюис описывает персонажей, имеющих прообразы в греческой и римской мифологии и в традиционных британских и ирландских сказках, в том числе существуют явные мотивы, близкие к последним.</div>
+          </div>
+        </div>
+      </div>
+      <div class="description__card card">
+        <div class="card__wrapper">
+          <img src="./assets/img/covers/almost-a-normal-family.jpg" alt="обложка книги" class="cover">
+          <div class="card__text">
+            <div class="card__title">Почти нормальная семья</div>
+            <div class="card__subtitle">Маттиас Эдвардссон</div>
+            <div class="card__main-text">
+              Кто убил Кристофера Ольсена и почему? В этом захватывающем триллере Маттиас Эдвардссон плетет паутину, в которую попадают и герои, и читатели, и любое событие имеет оборотную сторону. Все, о чем вы думали, что вы знаете, переворачивается с ног на голову, когда сдвигается перспектива и на сцене появляется новый персонаж, а вся история предстает в новом свете. Так насколько хорошо вы знаете своих детей и как далеко пойдете, чтобы защитить тех, кого любите? И можно ли оправдать убийство? С первых страниц автор втягивает читателя в стремительный и непредсказуемый водоворот событий, участниками которых становятся трое близких людей – одна «почти нормальная семья».
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description__card card">
+        <div class="card__wrapper">
+          <img src="./assets/img/covers/Murder-on-the-Orient-Express.jpg" alt="обложка книги" class="cover">
+          <div class="card__text">
+            <div class="card__title">Убийство в Восточном экспрессе</div>
+            <div class="card__subtitle">Агата Кристи</div>
+            <div class="card__main-text">
+              Находившийся в Стамбуле великий сыщик Эркюль Пуаро возвращается в Англию на знаменитом «Восточном экспрессе», в котором вместе с ним едут, кажется, представители всех возможных национальностей. Один из пассажиров, неприятный американец по фамилии Рэтчетт, предлагает Пуаро стать своим телохранителем, поскольку считает, что его должны убить. Знаменитый бельгиец отмахивается от этой абсурдной просьбы. А на следующий день американца находят мертвым в своем купе, причем двери закрыты, а окно открыто. Пуаро немедленно берется за расследование – и выясняет, что купе полно всевозможных улик, указывающих… практически на всех пассажиров «Восточного экспресса». Вдобавок поезд наглухо застревает в снежных заносах в безлюдном месте. Пуаро необходимо найти убийцу до того, как экспресс продолжит свой путь…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="covers">
+    <div class="covers__wrapper wrapper">
+      <h2 class="covers__title title" id="covers">Обложки книг к прочтению</h2>
+      <div class="covers__list list">
+        <div class="covers__union union">
+          <img src="./assets/img/covers/dune.png" alt="обложка книги" class="union__img">
+          <div class="union__text">
+            <div class="union__title">Дюна</div>
+            <div class="union__subtitle">Ф.Герберт</div>
+          </div>
+        </div>
+        <div class="covers__union union">
+          <img src="./assets/img/covers/summer.jpeg" alt="обложка книги" class="union__img">
+          <div class="union__text">
+            <div class="union__title">Лето в пионерском галстуке</div>
+            <div class="union__subtitle">Е. Малисова</div>
+          </div>
+        </div>
+        <div class="covers__union union">
+          <img src="./assets/img/covers/ten_little_niggers.jpg" alt="обложка книги" class="union__img">
+          <div class="union__text">
+            <div class="union__title">10 негритят</div>
+            <div class="union__subtitle">А. Кристи</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tasks">
+    <h2 class="title">Задания</h2>
+    <div class="content__wrapper wrapper">
+      <ul class="content__lists lists">
+        <li class="lists__item item">
+          <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+          <a href="./task-pages/logo.html">Логотип</a>
+        </li>
+        <li class="lists__item item">
+          <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+          <a href="./task-pages/picture.html">Рисунок CSS</a>
+        </li>
+        <li class="lists__item item">
+          <img src="./assets/favicon/open-book.svg" alt="иконка открытой книги" class="item__img">
+          <a href="./task-pages/flex.html">Flex</a>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <img src="./assets/favicon/logo.png" alt="логотип" class="footer__logo logo">
+      <div class="footer__contacts contacts">
+        <h4 class="footer__subtitle">Контакты</h4>
+        <ul class="contacts__listing listing">
+          <li class="listing__item">
+            <img src="./assets/favicon/mail.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">Yandex</span>
+          </li>
+          <li class="listing__item">
+            <img src="./assets/favicon/telegram.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">Telegram</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social social">
+        <h4 class="footer__subtitle">Социальные сети</h4>
+        <ul class="social-listing listing">
+          <li class="listing__item">
+            <img src="./assets/favicon/vk.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">VK</span>
+          </li>
+          <li class="listing__item">
+            <img src="./assets/favicon/instagram.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">Instagram</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,196 @@
+@import '../nullable';
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: $dark-blue;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--bottom {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+.menu-button {
+  display: none;
+}
+.navbar {
+  display: flex;
+  &__item {
+    list-style-type: none;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+/*
+  ==============================================
+  Flex
+  ==============================================
+*/
+
+.title {
+  text-align: center;
+}
+.wrapper {
+  margin: 15px auto;
+  width: 200px;
+}
+.content {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  background-image: url('../../assets/img/flex/relax2.jpg');
+  background-size: contain;
+  overflow: hidden;
+}
+.tree {
+  position: absolute;
+  width: 59%;
+  bottom: 13px;
+}
+.text {
+  display: none;
+  position: absolute;
+  font-weight: 800;
+  &--static {
+    top: 20px;
+    text-align: center;
+    color: #1a840c;
+  }
+  &--moving {
+    top: 87px;
+    left: 90px;
+    font-size: 14px;
+    color: #d48007;
+    transform: rotate(20deg);
+  }
+}
+.fox {
+  display: none;
+  position: absolute;
+  width: 44%;
+  bottom: 13px;
+  &--run {
+    right: -73px;
+  }
+  &--stand {
+    right: 19px;
+  }
+}
+.sun {
+  display: none;
+  position: absolute;
+  width: 23%;
+  top: 20px;
+}
+//Действие при наведении
+@keyframes fox-run {
+  100% {right:19px;}
+}
+.content:hover {
+  border: 5px solid red;
+  border-radius: 50px;
+  .text {
+    &--static {
+      display: block;
+    }
+  }
+  .fox {
+    &--run {
+      display: block;
+      animation: fox-run 3s linear forwards;
+    }
+  }
+}
+//Действие при нажатии
+@keyframes sun-moving {
+  0% {left: 0; top: 20px - 2px;}
+  5% {left: 0; top: 20px + 2px;}
+  10% {left: 0; top: 20px - 2px;}
+  90% {left: 156px; top: 20px - 2px;}
+  95% {left: 156px; top: 20px + 2px; }
+  100% {left: 156px; top: 20px - 2px; }
+}
+.content:active {
+  .text {
+    &--static {
+      display: none;
+    }
+    &--moving {
+      display: block;
+    }
+  }
+  .fox {
+    &--run {
+      display: none;
+    }
+    &--stand {
+      display: block;
+    }
+  }
+  .sun {
+    display: block;
+    animation: sun-moving 2s linear infinite alternate;
+  } 
+}
+
+/*
+  ==============================================
+  Footer
+  ==============================================
+*/
+.footer {
+  background-color: $dark-blue;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    padding-top: 41px;
+    padding-bottom: 42px;
+    justify-content: space-around;
+  }
+  &__title, &__subtitle{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+
+.listing {
+  list-style-type: none;
+  &__item {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-left: 17px;
+  }
+}

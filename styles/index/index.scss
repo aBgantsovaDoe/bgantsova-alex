@@ -1,0 +1,606 @@
+@import '../nullable';
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: $dark-blue;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--bottom {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+.menu-button {
+  display: none;
+}
+.navbar {
+  display: flex;
+  &__item {
+    list-style-type: none;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+/*
+  ==============================================
+  Books lists
+  ==============================================
+*/
+
+.books-lists {
+  background-color: rgba($light-blue, 0.23);
+  &__wrapper {
+    padding-top: 27px;
+    padding-bottom: 70px;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    padding-bottom: 28px;
+  }
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__wrapper {
+    width: 36%;
+    margin: 0 auto;
+    padding: 38px 42px 46px 42px;
+    border-radius: 8px;
+    background-color: $dark-blue;
+  }
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  &__lists {
+    margin-bottom: 20px;
+  }
+}
+.lists {
+  font-size: 16px;
+  &__item {
+    line-height: 24px;
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+}
+.item {
+  display: flex;
+  &__text {
+    padding-left: 6px;
+  }
+}
+.button {
+  width: 100%;
+  bottom: 20px;
+  padding: 24px;
+  background-color: $red;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+/*
+  ==============================================
+  Insert
+  ==============================================
+*/
+.insert {
+  background: linear-gradient(to bottom, rgba($light-blue, 0.4), rgba($light-blue, 0.4)), url("../../assets/img/shelves.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+}
+
+/*
+  ==============================================
+  Description
+  ==============================================
+*/
+.description {
+  background-color: rgba($light-blue, 0.23);
+  &__wrapper {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  &__title {
+    padding-bottom: 40px;
+  }
+  &__card {
+    margin: 0 auto 20px;
+  }
+}
+.card {
+  width: 80%;
+  justify-content: space-around;
+  background-color:white;
+  border-radius: 8px;
+  &__wrapper {
+    padding: 12px 65px 13px 66px;
+    display: flex;
+  }
+  &__title {
+    padding-bottom: 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: $red;
+  }
+  &__subtitle {
+    padding-bottom: 14px;
+    text-align: end;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.cover {
+  width: 190px;
+  height: 300px;
+  padding-right: 32px;
+}
+
+/*
+  ==============================================
+  Сovers
+  ==============================================
+*/
+.covers {
+  background-color: rgba($light-blue, 0.23);
+  &__wrapper {
+    padding-top: 34px;
+    padding-bottom: 55px;
+  }
+  &__title {
+    padding-bottom: 40px;
+  }
+  &__list {
+    margin: 0 auto;
+  }
+  &__union {
+    margin-bottom: 30px;
+  }
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.union {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 255px;
+  height: 360px;
+  background: linear-gradient(to bottom, rgba($light-blue, 0) 0%, rgba($light-blue, 0.72) 100%);
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  &__text {
+    max-width: 90%;
+    margin-left: 21px;
+    margin-top: 286px;
+    font-weight: 700;
+  }
+  &__title, &__subtitle {
+    font-size: 16px;
+    line-height: 20px;     
+  }
+}
+
+/*
+  ==============================================
+  Tasks
+  ==============================================
+*/
+
+.tasks {
+  background-color: rgba($light-blue, 0.23);
+  padding-bottom: 30px;
+}
+
+/*
+  ==============================================
+  Footer
+  ==============================================
+*/
+.footer {
+  background-color: $dark-blue;
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    padding-top: 41px;
+    padding-bottom: 42px;
+    justify-content: space-around;
+  }
+  &__title, &__subtitle{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+
+.listing {
+  list-style-type: none;
+  &__item {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-left: 17px;
+  }
+}
+
+/*
+  ==============================================
+  Media
+  ==============================================
+*/
+@media (max-width: 992px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    &__logo {
+      height: 46px;
+    }
+  }
+  .books-lists__wrapper {
+    padding-bottom: 47px;
+  }
+  .insert {
+    height: 210px;
+  }
+  .description{
+    &__wrapper {
+      padding-top: 28px;
+      padding-bottom: 10px;
+    }
+    &__title{
+      padding-bottom: 25px;
+    }
+  }
+  .covers {
+    &__wrapper {
+      padding-top: 16px;
+      padding-bottom: 26px;
+    }
+  }
+  .card {
+    &__wrapper {
+      display: block;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  .cover {
+    padding-right: 0;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  .union {
+    width: 226px;
+    height: 320px;
+    &__text {
+      margin-top: 255px;
+      font-size: 14px;
+    }
+    &__title, &__subtitle {
+      font-size: inherit;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding-top: 32px;
+      padding-bottom: 27px;
+    }
+    &__logo {
+      height: 44px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+  .listing {
+    &__item {
+      margin-bottom: 12px;
+    }
+    &__icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .union {
+    width: 205px;
+    height: 290px;
+    &__text {
+      margin-top: 212px;
+      margin-left: 15px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 89%;
+  }
+  .header {
+    font-size: 14px;
+    &__logo {
+      height: 40px;
+    }
+  }
+  .books-lists__title {
+    padding-bottom: 20px;
+  }
+  .content {
+    &__wrapper {
+      padding: 30px 36px 38px 36px;
+    }
+  }
+  .button {
+    padding: 16px;
+  }
+  .card {
+    width: 90%;
+    &__title {
+      padding-bottom: 10px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+    &__subtitle {
+      padding-bottom: 10px;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+  .covers {
+    &__title {
+      padding-bottom: 20px;
+    }
+    &__union {
+      margin-bottom: 14px;
+    }
+  }
+  .union {
+    width: 198px;
+    height: 280px;
+    &__text {
+      margin-top: 220px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  * {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__logo {
+      height: 30px;
+    }
+  }
+  .navbar {
+    &__item {
+      margin-left: 12px;
+    }
+  }
+  .books-lists{
+    &__wrapper {
+      padding-top: 16px;
+      padding-bottom: 30px;
+    }
+    &__title {
+      padding-bottom: 13px;
+    }
+  }
+  .content {
+    &__wrapper {
+      padding: 22px 25px;
+    }
+  }
+  .item {
+    &__img {
+      width: 20px;
+      height: auto;
+    }
+  }
+  .lists{
+    &__item {
+      line-height: 20px;
+    }
+  }
+  .button {
+    padding: 12px;
+    line-height: 19px;
+  }
+  .insert {
+    height: 160px;
+  }
+  .description {
+    &__wrapper {
+      padding-top: 20px;
+      padding-bottom: 2px;
+    }
+    &__title {
+      padding-bottom: 13px;
+    }
+    &__card {
+      margin-bottom: 10px;
+    }
+  }
+  .card {
+    &__title {
+      padding-bottom: 8px;
+      font-size: 18px;
+      line-height: 19px;
+    }
+    &__subtitle {
+      padding-bottom: 8px;
+      font-size: 15px;
+      line-height: 16px;
+    }
+  }
+  .cover {
+    width: 160px;
+    height: auto;
+    margin: 0 1em 0em 0;
+  }
+  .union {
+    width: 170px;
+    height: 240px;
+    &__text {
+      margin-top: 177px;
+      font-size: 11px;
+    }
+  }
+  .footer__title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    display: block;
+    &__wrapper {
+      width: 80%;
+      margin: 8px auto;
+    }
+  }
+  .list {
+    display: block;
+  }
+  .union {
+    width: 80%;
+    margin: 12px auto;
+  }
+  .card {
+    &__wrapper {
+      padding: 12px 20px;
+    }
+  }
+  .cover {
+    width: 47%;
+  }
+  .footer{
+    &__wrapper {
+      display: block;
+    }
+    &__logo {
+      width: 40%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__wrapper {
+      align-items: center;
+    }
+    &__logo {
+      height: 34px;
+    }
+  }
+  .mobile {
+    display: block;
+  }
+  .menu-button {
+    display: flex;
+    width: 24px;
+    height: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: $dark-blue;
+    cursor: pointer;
+    &__line {
+      width: 16px;
+      height: 1px;
+      background-color: #333333;
+    }
+  }
+  .navbar {
+    display: none;
+    &--bottom {
+      display: block;
+    }
+  }
+  .item {
+    &--bottom {
+      margin-top: 12px;
+      text-align: center;
+      line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .cover {
+    float: none;
+    width: 100%;
+  }
+  .card {
+    &__title {
+      padding-top: 10px;
+    }
+  }
+  .footer {
+    &__logo {
+      width: 45%;
+    }
+  }
+}

@@ -1,0 +1,213 @@
+@import '../nullable';
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: $dark-blue;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--bottom {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+.menu-button {
+  display: none;
+}
+.navbar {
+  display: flex;
+  &__item {
+    list-style-type: none;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+/*
+  ==============================================
+  Picture
+  ==============================================
+*/
+.picture {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 15px auto;
+  position: relative;
+}
+.smoke-1, .smoke-2, .smoke-3  {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(white, rgb(16, 167, 213));
+}
+.smoke-1 {
+  left: 24px;
+  bottom: 90px;
+}
+.smoke-2 {
+  left: 40px;
+  bottom: 103px;
+}
+.smoke-3 {
+  left: 60px;
+  bottom: 108px;
+}
+.car {
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 75px;
+  background-color: rgba(221, 33, 16, 0.348);
+  z-index: -1;
+}
+.tube {
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  left: 23px;
+  bottom: 50px;
+  background: linear-gradient(to right, rgba(255, 127, 80, 0.114), coral);
+}
+.cabin {
+  position: absolute;
+  border-radius: 5px;
+  height: 28px;
+  width: 37px;
+  left: 40px;
+  bottom: 47px;
+  background-color: red;
+}
+.window {
+  position: absolute;
+  border-radius: 5px;
+  height: 15px;
+  width: 29px;
+  left: 44px;
+  bottom: 55px;
+  background-color: white
+}
+.headlight {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 5px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.item-1, .item-2, .item-3, .item-4 {
+  width: 60px;
+  height: 16px;
+  position: absolute;
+}
+.item-1 {
+  left: 20px;
+  bottom: 35px;
+  background-color: greenyellow;
+}
+.item-2 {
+  left: 20px;
+  bottom: 19px;
+  background-color: orange;
+}
+.item-3 {
+  left: 82px;
+  bottom: 35px;
+  background-color: yellow;
+}
+.item-4 {
+  left: 82px;
+  bottom: 19px;
+  background-color: rgb(0, 229, 255);
+}
+.wheel-1, .wheel-2, .wheel-3, .wheel-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: 11px;
+  border-radius: 50%;
+  background-color:brown;
+}
+.triangle-1, .triangle-2, .triangle-3, .triangle-4 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 6px;
+  left: 2px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid orange;
+}
+.wheel-1 {
+  left: 27px;
+}
+.wheel-2 {
+  left: 57px;
+}
+.wheel-3 {
+  left: 89px;
+}
+.wheel-4 {
+  left: 119px;
+}
+
+/*
+  ==============================================
+  Footer
+  ==============================================
+*/
+.footer {
+  background-color: $dark-blue;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    padding-top: 41px;
+    padding-bottom: 42px;
+    justify-content: space-around;
+  }
+  &__title, &__subtitle{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+
+.listing {
+  list-style-type: none;
+  &__item {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-left: 17px;
+  }
+}

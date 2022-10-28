@@ -74,6 +74,66 @@ a {
 
 /*
   ==============================================
+  Logo
+  ==============================================
+*/
+.logo-pic {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 15px auto;
+  border: 1px solid #5DA2D5;
+}
+
+.book {
+  position: absolute;
+  height: 84%;
+  width: 68%;
+  top: 8%;
+  left: 16%;
+  background-color: #F3D250;
+}
+
+.logo-title {
+  position: absolute;
+  height: 35%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  background-color: #ECECEC;
+  border-radius: 4px;
+}
+
+.line {
+  position: absolute;
+  height: 1px;
+  width: 70%;
+  left: 15%;
+  background-color: black;
+}
+.line:nth-child(1) {
+  top: 25%;
+}
+.line:nth-child(2) {
+  top: 50%;
+}
+.line:nth-child(3) {
+  top: 75%;
+}
+
+.bookmark {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 8%;
+  right: 23%;
+  border-width: 16px 4px 6px;
+  border-style: solid;
+  border-color: #F78888 #F78888 transparent;
+}
+
+/*
+  ==============================================
   Books lists
   ==============================================
 */

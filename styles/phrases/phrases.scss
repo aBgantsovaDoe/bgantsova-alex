@@ -1,0 +1,103 @@
+@import '../nullable';
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: $dark-blue;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--bottom {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  &__logo {
+    height: 53px;
+  }
+}
+.menu-button {
+  display: none;
+}
+.navbar {
+  display: flex;
+  &__item {
+    list-style-type: none;
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+/*
+  ==============================================
+  Content
+  ==============================================
+*/
+.content {
+  margin: 0 auto;
+  width: 80%;
+  background-color: bisque;
+}
+
+.buttons {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 7px;
+  background-color: orange
+}
+
+.board {
+  padding: 10px 15px;
+}
+
+.phrase {
+  position: relative;
+  margin-bottom: 10px;
+  left: 0;
+  width: 20%;
+  padding: 10px 7px;
+  background-color: orange;
+  border-radius: 8px;
+  transition: 2s;
+  &:hover {
+    transform: scale(1.10);
+  }
+}
+.hidden {
+  display: none;
+}
+.warning {
+  text-align: center;
+}
+.onclick {
+  border-radius: 0;
+}
+
+@keyframes phrase-moving {
+  from {left: 0;}
+  to {left: 70%;}
+}
+.move {
+  animation: phrase-moving 2.5s linear 1 normal forwards;
+} 

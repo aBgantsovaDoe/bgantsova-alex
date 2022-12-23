@@ -54,13 +54,14 @@ board.addEventListener('click', function (evt) {
   let text = item.textContent;
   const num = text.substring(0, text.indexOf('.'));
   item.textContent = `${num}. ${LATIN_PHRASES[used[num - 1]]}`;
-  item.closest('.phrase').classList.add('move');
+  const parent = item.closest('.phrase').classList.add('move');
+  parent.classList.add('move');
 
 });
 
 const colorButton = document.querySelector('.color');
 colorButton.addEventListener('click', function () {
-  const items = board.querySelectorAll('.phrase');
+  const items = board.querySelectorAll('.phrase');s
   if (items.length > 0) {
     for (let el = 0; el < items.length; el++) {
       if(items[el].classList.contains('move')) {

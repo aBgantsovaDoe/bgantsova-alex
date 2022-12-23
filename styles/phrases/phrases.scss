@@ -101,3 +101,7 @@ button {
 .move {
   animation: phrase-moving 2.5s linear 1 normal forwards;
 } 
+
+.move-alt {
+  animation: phrase-moving 2.5s reverse 1 forwards;
+} 

@@ -146,4 +146,8 @@ button {
 .move {
   -webkit-animation: phrase-moving 2.5s linear 1 normal forwards;
           animation: phrase-moving 2.5s linear 1 normal forwards;
+}
+
+.move-alt {
+  animation: phrase-moving 2.5s reverse 1 forwards;
 }/*# sourceMappingURL=phrases.css.map */

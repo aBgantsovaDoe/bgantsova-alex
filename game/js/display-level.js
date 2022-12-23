@@ -26,7 +26,7 @@ function displayZone () {
   }
 };
 
-function displayCards(difficulty, level = 1) { 
+function displayCards(difficulty, addLvl, level = 1) { 
   const lvlWords = level === 1 ? getRandomArrayElements(WORDS.slice(), FIRST_WORDS_NUMBER) 
                                : getRandomArrayElements(WORDS.slice(), SECOND_WORDS_NUMBER);
   let numRight = 0;
@@ -37,7 +37,8 @@ function displayCards(difficulty, level = 1) {
           lvlWords.forEach(element => {
             const card = templateCard.cloneNode(true);
             card.querySelector('.word').textContent = element.value;
-            card.querySelector('.ans').textContent = element.easyFirst;
+            if (addLvl) card.querySelector('.ans').textContent = element.additional;
+            else card.querySelector('.ans').textContent = element.easyFirst;
             field.append(card);
             numRight += element.easyFirst;
           });

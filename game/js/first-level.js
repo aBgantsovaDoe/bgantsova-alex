@@ -12,6 +12,7 @@ let difficultyLvl = 'easy';
 
 const setOnCard = function (evt) {
   const currentCard = evt.target.parentNode;
+  if (currentCard.classList.contains('right') || currentCard.classList.contains('wrong')) return false;
   if (currentCard.classList.contains('card')) {
     const answer = currentCard.querySelector('.ans').textContent;
     if (answer === '1') {
@@ -29,12 +30,12 @@ const setOnCard = function (evt) {
   }
 };
 
-const setBeginFirstLevel = function (difficulty) {
+const setBeginFirstLevel = function (difficulty, additional) {
   difficultyLvl = difficulty;
   score.textContent = 0;
   document.querySelector('.to-next-lvl').classList.add('hidden');
   inGame();
-  const numRight = displayCards(difficulty);
+  const numRight = displayCards(difficulty, additional);
   progress.textContent = '0';
   document.querySelector('.need-progress').textContent = `/${numRight}`;
   field.addEventListener('click', setOnCard);

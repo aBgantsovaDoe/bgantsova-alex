@@ -24,4 +24,4 @@ const putCurrentInStorage = function (user) {
   localStorage.setItem('user', JSON.stringify(user));
 };
 
-export {getRandomArrayElements, putCurrentInStorage, getCurrentFromStorage};
+export {getRandomArrayElements, putCurrentInStorage, getCurrentFromStorage, getRandom};

@@ -2,7 +2,7 @@
 import { setTimer } from './timer.js'
 import { setBeginFirstLevel, setEndFirstLevel } from './first-level.js';
 import { setBeginSecondLevel, setEndSecondLevel } from './second-level.js';
-import { putCurrentInStorage, getCurrentFromStorage } from './util.js';
+import { putCurrentInStorage, getCurrentFromStorage, getRandom } from './util.js';
 
 //check authorization
 
@@ -15,9 +15,17 @@ const difficulty = current_user['difficulty'];
 document.querySelector('.difficulty-lvl').textContent = difficulty === 'easy' ? 'легко' : 'сложно';
 if (current_user['level'] >= 2) document.querySelector('#second').checked = true;
 
+let additional = false;
+
 const displayTask = function (difficulty, level) {
+  const firstTasks = ['Первая и последняя буква обе гласные или согласные', 'В слове больше 4-х букв'];
   if (level === 1) {
-    if (difficulty === 'easy') document.querySelector('.task-text').textContent = 'Первая и последняя буква обе гласные или согласные';
+    if (difficulty === 'easy') { 
+      const num = getRandom(0, firstTasks.length - 1);
+      console.log(num);
+      if (num >= 1) additional = true;
+      document.querySelector('.task-text').textContent = firstTasks[num];
+    }
     else document.querySelector('.task-text').textContent = 'В слове не больше 2-х слогов';
   } 
   else {
@@ -42,7 +50,7 @@ const offButton = function () {
 const onButton = function () {
   onOffButton.removeEventListener('click', onButton);
   onOffButton.addEventListener('click', offButton);
-  if (current_user['level'] === 1) setBeginFirstLevel(difficulty);
+  if (current_user['level'] === 1) setBeginFirstLevel(difficulty, additional);
   else setBeginSecondLevel(difficulty, current_user['score']);
   setTimer();
 }

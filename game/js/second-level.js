@@ -42,7 +42,7 @@ const setBeginSecondLevel = function (difficulty, prevScore) {
   score.textContent = prevScore;
   document.querySelector('.to-next-lvl').classList.add('hidden');
   inGame();
-  displayCards(difficulty, 2);
+  displayCards(difficulty, false, 2);
 
   const cards = document.querySelector('.pool').querySelectorAll('.card');
   cards.forEach(element => {

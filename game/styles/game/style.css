@@ -143,6 +143,7 @@ button:hover {
   border-radius: 8px;
   color: black;
   transition: opacity 1s ease-in-out;
+  position: relative;
 }
 
 .word {
@@ -152,7 +153,6 @@ button:hover {
 }
 
 .ans {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -207,10 +207,6 @@ button.green-mode, .info.green-mode, .timer.green-mode {
 
 button.green-mode:hover {
   background: #0ea500;
-}
-
-.card.green-mode {
-  background-color: #6ef673;
 }
 
 #theme {
